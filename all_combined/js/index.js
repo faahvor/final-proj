@@ -70,15 +70,18 @@ function loadQuestion() {
         const currentQuestion = questions[currentQuestionIndex];
 
         questionContainer.innerHTML = `
-            <div class="average_question"><i class="scoreDisplay">${score}</i><big>/</big><small>${totalQuestions}</small></div>
-            <p class="question_appear">${currentQuestion.question}</p>
-            <div class="label_input">
-                <div class="input" data-option="A" onclick="selectAnswer('A')" ${selectedOption === 'A' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.A}</div><br>
-                <div class="input" data-option="B" onclick="selectAnswer('B')" ${selectedOption === 'B' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.B}</div><br>
-                <div class="input" data-option="C" onclick="selectAnswer('C')" ${selectedOption === 'C' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.C} </div><br>
-                <div class="input" data-option="D" onclick="selectAnswer('D')" ${selectedOption === 'D' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.D}</div><br>
-                <button onclick="checkAnswer()">Check Answer</button>
-            </div>
+        <div class="mx-2">
+        <div class="average_question text-[#7D32B5] text-center"><i class="scoreDisplay  text-3xl font-bold">${score}</i><big class="font-bold text-3xl">/</big><small class="font-bold">${totalQuestions}</small></div>
+        <p class="question_appear text-2xl font-bold text-center pb-4">${currentQuestion.question}</p>
+        <div class="label_input">
+            <div class="input border border-2 p-4 border-[#7D32B5] text-center rounded-2xl" data-option="A" onclick="selectAnswer('A')" ${selectedOption === 'A' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.A}</div><br>
+            <div class="input border border-2 p-4 border-[#7D32B5] text-center rounded-2xl" data-option="B" onclick="selectAnswer('B')" ${selectedOption === 'B' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.B}</div><br>
+            <div class="input border border-2 p-4 border-[#7D32B5] text-center rounded-2xl" data-option="C" onclick="selectAnswer('C')" ${selectedOption === 'C' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.C} </div><br>
+            <div class="input border border-2 p-4 border-[#7D32B5] text-center rounded-2xl" data-option="D" onclick="selectAnswer('D')" ${selectedOption === 'D' ? 'style="background-color: lightgreen;"' : ''}> ${currentQuestion.options.D}</div><br>
+            <button onclick="checkAnswer()" class="border border-2 text-white p-4 bg-[#7D32B5] text-center w-full rounded-full">Check Answer</button>
+        </div>
+        </div>
+           
         `;
     }
 }

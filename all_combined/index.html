@@ -4,66 +4,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Project</title>
-    <!-- <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/white.css"> -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="css/white.css"> 
 </head>
-<body class="m-auto w-[100%]">
+<body class="">
     <div class="flex bg-purple-300 items-center justify-center min-h-screen">
-        <div class="flex flex-col bg-white rounded-lg items-center justify-center ">
-            <div class="relative   grid  grid-cols-3 gap-4 bg-[#7D32B5] mb-10  rounded-b-xl rounded-t-xl  ">
-                <div class=" pt-10 px-6 pb-20">
+        <div class="relative flex flex-col bg-white rounded-lg items-center justify-center ">
+            <div class="relative  grid  grid-cols-3 gap-4 bg-[#7D32B5] px-2 mb-10 items-center justify-center  rounded-b-xl rounded-t-xl  ">
+                
                             <div class="player_0 activePlayer ">
-                                <div class=" flex flex-col   justify-center items-center ">
+                                <div class=" grid grid-rows-2">
+                                           <div class="flex justify-center items-center">
                                             <img src="image/female.png" 
-                                        alt="female profile"
-                                        class="object-contain h-20 items-center ">
-                                        <h6 class="absolute right-[225px]">+</h6>
+                                            alt="female profile"
+                                            class=" w-[100px] ">
+                                            <h6 class="absolute right-[73%] top-[27%] sm:right-[78%] sm:top-[30%] ">
+                                                <span class="bg-green-400 text-white text-center rounded-full">+</span>
+                                            </h6>
+                                           </div>
                                   
-                                        <input type="text" 
+                                        <div >
+                                            
+                                            <input type="text" 
                                         name="name" 
-                                        class="name bg-[#9038D2] w-[120px]   text-white text-center text-lg py-1 rounded-2xl "
+                                        class="name bg-[#9038D2] w-[100%]  text-white text-center text-lg py-1 rounded-2xl "
                                         placeholder="Your name">
-                                    
-                                        <h4 class="rate  " id="score-1">0</h4>
+                                        <h4 class="rate flex items-center justify-center " id="score-1">0</h4>
+                                        </div>
+                                        
                                 </div>
+                                
                                 
                             
                             </div>
-                        </div>
-                        <div class=" pt-10 px-6 pb-20">
-                                <div class="vs align-center font-bold text-3xl text-white">
+                       
+                       
+                                <div class="vs pt-10 px-6 pb-20 flex items-center justify-center self-center font-bold text-3xl text-white">
                                     VS
                                 </div>
-                         </div>
+                         
                     
                             
-                         <div class=" pt-10 px-6 pb-20">
+                         
                                 <div class="player_1 ">
-                                    <div class=" flex flex-col  justify-center items-center ">      
+                                    <div class=" grid grid-rows-2 "> 
+                                        <div class="flex justify-center items-center">
                                             <img src="image/man.png"
                                             alt="male profile"
-                                            class="object-contain h-[70px] flex  mb-2">
-                                            <h6 class="absolute">+</h6>
-                                        
-                                                <input type="text" 
+                                            class=" w-[70px] pt-2 pb-2 sm:pt-[7px] sm:pb-4">
+                                            <h6 class="absolute left-[94%] top-[27%] sm:left-[86.5%] sm:top-[29%]">
+                                                <span class="bg-green-400 text-white text-center rounded-full">+</span>
+                                            </h6>
+                                        </div>     
+                                           
+                                        <div>
+                                            <input type="text" 
                                             name="name" 
-                                            class="name bg-[#9038D2]  w-[120px]   text-white text-center text-lg py-1 rounded-2xl "
+                                            class="name bg-[#9038D2] w-[100%]    text-white text-center text-lg py-1 rounded-2xl "
                                             placeholder="Your name">
-                                        
-                                            <h4 class="rate" id="Score-2">0</h4>
+                                            <h4 class="rate flex items-center justify-center" id="Score-2">0</h4>
+                                        </div>
+                                               
+                                            
                                     
                                     </div>
                                 
                         
                                 </div>
-                        </div>
+                        
                 
         </div>
-        <!-- 
-            <div class="slidecontainer">
-                <input type="range" min="1" max="20" value="0" class="slider" id="slideRange">
-            </div>
         
+        <div class="slidecontainer">
+            <input 
+              type="range"
+              min="1" max="20"
+              value="0" 
+              class="slider absolute top-[170px] right-[90px] sm:top-[190px] sm:right-[170px] h-7 rounded-full w-[50%] bg-purple-200 appearance-none cursor-pointer"
+              id="slideRange">
+          </div>
        
           <div class="flex flex-col items-center justify-center">
             <div class="bottom"></div>
@@ -74,7 +93,7 @@
             </div>
 
           </div>
-            -->
+           
      </div>       
 </div>
 
